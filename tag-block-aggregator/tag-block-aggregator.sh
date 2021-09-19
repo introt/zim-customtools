@@ -2,7 +2,7 @@
 
 # tag-block-aggregator.sh
 # free software under GPLv2
-# upstream: https://github.com/introt/zim-customtools/tag-block-aggregator
+# upstream: https://github.com/introt/zim-customtools/tree/main/tag-block-aggregator
 
 # a Zim Wiki custom tool for to
 # "Aggregate content based on tag and content block #1590"
