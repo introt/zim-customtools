@@ -25,7 +25,11 @@
 set -eu
 
 find "$1/$2" -type f -name '*.txt' | sort | xargs gawk -v "nbpath=$1" -v "search_tag=$3" '
-BEGINFILE { first = 1 } # everything but 0 and "" are true
+BEGINFILE { # reset vars before processing file
+	first = 1 # everything but 0 and "" are true
+	depth = 0
+	content = 0
+}
 
 /^tag: .* --$/ { # match tag lines
 	for ( n = 2; n < NR; n++ ) { # search the tags

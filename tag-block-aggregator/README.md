@@ -28,7 +28,7 @@ which ends the listed tags, or
 
     --
 
-which ends all blocks.
+which ends all blocks. Tag blocks without explicit end marks continue till the end of the file.
 
 `tag` is considered equal to `@tag` - you don't need to type the `@` when aggregating.
 
